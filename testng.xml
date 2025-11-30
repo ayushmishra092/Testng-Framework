@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Selenium Test Suite" parallel="false">
+
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
+
+    <test name="Login Test">
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="ayush"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+
+        <classes>
+
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
+</suite>
+
+
+<!--        - parallel="methods" → Runs test methods in parallel within the same class.-->
+<!--        - parallel="classes" → Runs different classes in parallel.-->
+<!--        - parallel="tests" → Runs entire <test> blocks in parallel.-->
+<!-- - parallel="instances" → Runs multiple instances of the same class in parallel.-->
+<!--👉 Example in testng.xml:-->
+<!--<suite name="Suite" parallel="methods" thread-count="4">-->
+<!--    <test name="LoginTests">-->
+<!--        <classes>-->
+<!--            <class name="tests.LoginTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
+
+
+
+
